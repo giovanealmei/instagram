@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+/*cabeçalho - header*/
+#header{
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#header img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 16px 0;
+}
+#header h1{
+    line-height: 1.5;
+    font-size: 3.5rem;
+    text-align: center;
+}
+#header p{
+    line-height: 1.5;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: -10px;
+}
+
+
+
+/*conteúdo - content*/
+.content{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    margin: 24px 0;
+}
+.content-item{
+    width: 20%;
+    margin: 12px;
+    padding: 16px;
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    min-width: 270px;
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.content-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-item:hover{
+    border: 1px solid #0a00ff;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+a:hover{
+    color: #0a00ff;
+}
+
+
+
+/* store - loja */
+.store{
+    font-size: 1.1rem;
+    margin-top: -3px;
+    margin-bottom: 5px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+
+/* responsiveness - responsividade */
+@media (max-width: 655px){
+    #header img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 8px 0;
+        }
+    #header h1{
+        line-height: 1.5;
+        font-size: 32px;
+        text-align: center;
+        }
+    #header p{
+        line-height: 1.5;
+        font-size: 16px;
+        text-align: center;
+        margin-top: -5px;
+        }
+}
